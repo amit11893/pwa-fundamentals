@@ -15,7 +15,7 @@ module.exports = function(env) {
     },
     mode,
     resolve: {
-      extensions: ['.js', '.jsx']
+      extensions: ['.js', '.jsx', '.json']
     },
     devServer: devServer(...arguments),
     devtool: 'cheap-module-source-map',

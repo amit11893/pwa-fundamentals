@@ -32,6 +32,14 @@ module.exports = function() {
             }
           }
         ]
+      },
+      {
+        type: 'javascript/auto',
+        test: /\.json/,
+        use:[{
+          loader: 'file-loader',
+          options: { name: '[name].[ext]'}
+        }]
       }
     ]
   };

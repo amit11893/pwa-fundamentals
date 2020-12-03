@@ -16,6 +16,16 @@ class Home extends Component {
   }
 
   render() {
+    let schemaData = {
+      '@context' : 'http://schema.org',
+      '@type': 'Product',
+      'image': 'dell-30in0lcd.jpg',
+      'name': 'Dell UltraSharp 30" LCD Monitor',
+      'offers': {
+        '@type': 'Offer',
+        'price': '$1495'
+      }
+    }
     let categoryRows = this.state.categories.map((c) => (
       <CategoryRow
         className="category-list__item"

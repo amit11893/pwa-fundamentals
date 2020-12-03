@@ -3,7 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
-import VAPID from './../private/vapid.json';
+// import VAPID from './../private/vapid.json';
+import './web-app-manifest.json';
+import 'worker-loader?name=./qr-worker.js!./qr-worker.js';
 
 import 'file-loader?name=./img/launcher-icon-1x.png!./img/launcher-icon-1x.png';
 import 'file-loader?name=./img/launcher-icon-2x.png!./img/launcher-icon-2x.png';
